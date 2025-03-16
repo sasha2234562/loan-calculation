@@ -1,0 +1,19 @@
+.button{
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    color: #ea0029;
+
+    &:hover{
+        color: #f53a31;
+    }
+
+    &:active{
+        color: #ea0029;
+    }
+}
+.button_text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71429;
+}
