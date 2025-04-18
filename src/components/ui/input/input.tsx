@@ -7,13 +7,13 @@ interface Props extends DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
 }
 
 export const Input = forwardRef<HTMLInputElement, Props>((
-    {label, error, ...rest}
+    {label, error, ...rest}, ref
 ) => {
 
     return (
         <div className={s.container}>
             <label className={s.label}>{label}</label>
-            <input className={error ? s.input_error : s.input} {...rest}/>
+            <input className={error ? s.input_error : s.input} {...rest} ref={ref}/>
             {error && <p className={s.input_error_text}>{error}</p>}
         </div>
     );
